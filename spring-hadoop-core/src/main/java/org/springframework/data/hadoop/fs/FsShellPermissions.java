@@ -70,7 +70,7 @@ abstract class FsShellPermissions {
 		String[] argvs = new String[0];
 
 		if (recursive) {
-			ObjectUtils.addObjectToArray(argvs, "-R");
+			argvs = ObjectUtils.addObjectToArray(argvs, "-R");
 		}
 		argvs = concatAll(argvs, new String[] { group }, uris);
 
